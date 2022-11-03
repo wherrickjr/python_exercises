@@ -32,6 +32,7 @@ password = 'notastrongpassword'
 len(password) >= 5
 len(username) <= 20
 username != password
+## BONUS
 username[0] != ' '
 password[0] != ' '
 
