@@ -23,6 +23,7 @@ class_schedule = True
 class_full == False and class_schedule == True
 
 ## whether or not an offer can be applied
+
 (number_of_items > 2 or premium_member == True ) and offer_expired == False
 
 
