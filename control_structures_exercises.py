@@ -1,6 +1,5 @@
-day = 'Monday'
-print('Day of the week? '+ day)
-if day == 'Monday':
+day = input("Enter the day of the week: ")
+if day.strip().lower() == 'monday':
     print('it\'s Monday!')
 else:
     print('the week is chugging along!')
@@ -55,7 +54,7 @@ while 5 <= i <= 100:
 
 #part i
 i = int(input('please enter a number: '))
-for n in range(1,10):
+for n in range(1,11):
     line = n * i
     print(f"{i} * {n} = " + str(line))
 
@@ -116,5 +115,38 @@ print("------ | ------- | -----")
 for n in range(0, squared + 1):
     print(str(m) + "      |" + str(m ** 2) + "        |" + str(m ** 3))
     m += 1
+
+
+# 5
+while True:
+    your_num = int(input("Input your grade here: "))
+
+    if your_num >= 88:
+        print("A")
+    elif your_num >= 80:
+        print("B")
+    elif your_num >= 67:
+        print("C")
+    elif your_num > 60:
+        print("D")
+    else:
+        print("F")
+    your_input = input("Do you want to continue? y/n")
+
+    if your_input.lower().strip() == "n":
+
+        break
+
+
+#6
+books_read = [{"title": "Harry potter", "author": "J.K. Roweling", "genre": "fantasy"},
+             {"title": "lord of the rings", "author": "J.R. Tolkein", "genre":"fantasy"},
+             {"title": "it", "author": "stephen king", "genre": "something else"}]
+
+query = input("enter a genre ")
+for book in books_read:
+    if book["genre"] == query:
+        print(f" {book['title']} is one")
+
 
 
