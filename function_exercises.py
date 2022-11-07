@@ -29,8 +29,12 @@ def capitalize_if_constant(x):
         return x
 
 #5
-def calculate_tip(bill):
-    tip = bill * 0.2
+def calculate_tip(bill, rate):
+    while rate < 0 or rate > 1:
+        error = "please enter a tip rate between 0 and 1"
+        return error
+    else:
+        tip = bill * rate
     return tip
 
 #6
