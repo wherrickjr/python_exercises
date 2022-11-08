@@ -7,11 +7,16 @@ def is_two(x):
 
 #2
 def is_vowel(x):
-    for letter in x:
-        if letter in "aeiouAEIOU":
-            return True
+    vowels = 0
+    for char in x:
+        if char in "aeiouAEIOU":
+            vowels = vowels + 1
         else:
-            return False
+            vowels = vowels
+    if vowels != 0:
+        return True
+    else:
+        return False
 
 #3
 def is_constant(x):
@@ -49,7 +54,21 @@ def handle_commas(x):
 
 #10
 def normalize_name(x):
+    error = "please enter a valid username"
     stripped = x.strip()
     stripped_and_low = stripped.lower()
     stripped_low_and_underscored = stripped_and_low.replace(" ", "_")
-    return stripped_low_and_underscored
+    if stripped_low_and_underscored.isalnum() == True:
+        return stripped_low_and_underscored
+    else:
+        return error
+    
+    
+# 11
+def cum_sum(x):
+    new_list = []
+    j = 0
+    for i in x:
+        j = j + i
+        new_list.append(j)
+    return new_list
