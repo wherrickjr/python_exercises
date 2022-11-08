@@ -74,7 +74,7 @@ def handle_commas(x):
 
 
 #8 returns letter grade for given score as input
-def is_letter_grade(score):
+def get_letter_grade(score):
     if(score < 60):
         return "F"
     elif score < 70:
