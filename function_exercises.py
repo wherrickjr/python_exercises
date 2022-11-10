@@ -127,3 +127,5 @@ def cum_sum(x):
         new_list.append(j)
         #this adds each value to the place holder list new_lsit
     return new_list
+
+    
